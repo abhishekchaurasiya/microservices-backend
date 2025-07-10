@@ -6,28 +6,7 @@ A production-ready microservices backend using Node.js, Express, MongoDB, Axios,
 - **Admin Service** — Manages products and Add and Get all products
 - **Gateway Service** — Routes requests to user/admin services
 
-## User api endpoint:
-
-1. http://localhost:4001/api/v1/user/register ✅
-2. http://localhost:4001/api/v1/user/place-order ✅
-
-## Admin api endpoint:
-
-1. http://localhost:4002/api/v1/admin/add-product ✅
-2. http://localhost:4002/api/v1/admin/products ✅
-3. http://localhost:4002/api/v1/admin/product/productId ✅
-4. http://localhost:4002/api/v1/admin/update-stock/productId ✅
-
-## Gateway api Endpoint
-
-1. http://localhost:4000/api/v1/user/register ✅
-2. http://localhost:4000/api/v1/user/place-order ✅
-3. http://localhost:4000/api/v1/admin/add-product ✅
-4. http://localhost:4000/api/v1/admin/products ✅
-5. http://localhost:4000/api/v1/admin/product/productId ✅
-6. http://localhost:4000/api/v1/admin/update-stock/productId ✅
-
-// Check Postman Collection:
+## **Check Postman Collection:
 
 ## https://documenter.getpostman.com/view/18752395/2sB34eKNSP#1a38f268-bd3b-461f-ac75-46464dd1f407
 
@@ -123,6 +102,6 @@ A ready-to-use Postman collection is available:
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/microservices-backend.git
+git clone https://github.com/abhishekchaurasiya/microservices-backend.git
 cd microservices-backend
 ```
