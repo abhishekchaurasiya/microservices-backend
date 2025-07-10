@@ -9,10 +9,7 @@
     "build": "tsc",
     "start": "node dist/server.js",
     "watch": "tsc -w",
-    "dev": "concurrently \"tsc -w\" \"nodemon dist/server.js\"",
-    "create:apiKey": "node dist/database/seedApikey.js",
-    "create:admin": "npx ts-node src/database/seedAdmin.ts",
-    "create:role": "npx ts-node src/database/seedRoles.ts"
+    "dev": "concurrently \"tsc -w\" \"nodemon dist/server.js\""
   },
   "dependencies": {
     "axios": "^1.10.0",
