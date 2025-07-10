@@ -1,4 +1,5 @@
 import { Response } from "express";
+import { SERVER_ERROR } from "./StatusCode";
 
 // Define Error types
 export enum ErrorType {
@@ -20,7 +21,7 @@ export class ApiError extends Error {
   }
 
   static hadler(err: ApiError, res: Response) {
-    res.status(err.statusCode || 500).json({
+    res.status(err.statusCode || SERVER_ERROR).json({
       message: err.message || "Internal server error",
       type: err.type || ErrorType.INTERNAL,
     });
