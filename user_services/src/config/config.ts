@@ -19,16 +19,3 @@ export const db = {
   minPoolSize: parseInt(process.env.MIN_POOLSIZE ?? "5"),
   maxPoolSize: parseInt(process.env.MAX_POOLSIZE ?? "10"),
 };
-
-export const tokenInfo = {
-  issuer: process.env.TOKEN_ISSUER ?? "",
-  audience: process.env.TOKEN_AUDIENCE ?? "",
-  secret: process.env.TOKEY_SECRET ?? "",
-  algorithm: process.env.TOKEN_ALGORITHM ?? "HS256",
-  accessTokenValidity: parseInt(
-    process.env.ACCESS_TOKEN_VALIDITY_SECOND ?? "3600"
-  ),
-  refreshTokenValidity: parseInt(
-    process.env.REFRESH_TOKEN_VALIDITY_SECOND ?? "86400"
-  ),
-};
