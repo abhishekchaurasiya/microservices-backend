@@ -1,0 +1,64 @@
+{
+  "info": {
+    "name": "Microservices Web APIs",
+    "_postman_id": "1234-abcd-5678",
+    "description": "Test User and Admin Service via Gateway",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Register User",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Ram\",\n  \"email\": \"ram@example.com\",\n  \"phone\": \"1234567890\"\n}"
+        },
+        "url": { "raw": "http://localhost:4001/api/v1/user/register" }
+      }
+    },
+    {
+      "name": "Add Product",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Notebook\",\n  \"description\": \"Paper Notebook\",\n  \"price\": 50,\n  \"stock\": 100\n}"
+        },
+        "url": { "raw": "http://localhost:4002/api/v1/admin/add-product" }
+      }
+    },
+    {
+      "name": "Place Order",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"userId\": \"PUT_USER_ID\",\n  \"productId\": \"PUT_PRODUCT_ID\",\n  \"quantity\": 2\n}"
+        },
+        "url": { "raw": "http://localhost:4001/api/v1/user/place-order" }
+      }
+    },
+    {
+      "name": "List Products",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": { "raw": "http://localhost:4002/api/v1/admin/products" }
+      }
+    },
+    {
+      "name": "Single Products",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4002/api/v1/admin/product/PUT_PRODUCT_ID"
+        }
+      }
+    }
+  ]
+}

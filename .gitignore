@@ -1,0 +1,37 @@
+# Node dependencies
+**/node_modules/
+**/package-lock.json
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files (keep .env.example)
+**/.env
+!**/.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/editor config
+.vscode/
+.idea/
+*.sw?
+
+# Build / coverage
+dist/
+build/
+coverage/
+
+# Swagger temp files (if generated)
+**/swagger-output.json
+
+# Misc
+.env
+.env.*
+!.env.example
+*.local
